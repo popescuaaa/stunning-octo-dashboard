@@ -1,5 +1,9 @@
 {
-	"name": "mosaic-react",
+	"name": "stunning-octo-dashboard",
+	"author": {
+		"name": "Andrei Popescu",
+		"email": "andreigabrielpopescu556@gmail.com"
+	},
 	"version": "0.1.0",
 	"scripts": {
 		"dev": "vite",
