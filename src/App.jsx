@@ -12,7 +12,7 @@ import './charts/ChartjsConfig';
 // Import pages
 import Dashboard from './pages/Dashboard';
 
-function App() {
+const App = () => {
 
   const location = useLocation();
 

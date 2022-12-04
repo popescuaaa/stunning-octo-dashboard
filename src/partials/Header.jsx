@@ -4,10 +4,10 @@ import Notifications from './header/Notifications';
 import Help from './header/Help';
 import UserMenu from './header/UserMenu';
 
-function Header({
+const Header = ({
   sidebarOpen,
   setSidebarOpen
-}) {
+}) => {
 
   const [searchModalOpen, setSearchModalOpen] = useState(false)
 
