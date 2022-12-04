@@ -1,10 +1,10 @@
-import React from 'react';
-import Notifications from './header/Notifications';
-import Help from './header/Help';
-import UserMenu from './header/UserMenu';
+import React from "react";
+import Notifications from "./header/Notifications";
+import Help from "./header/Help";
+import UserMenu from "./header/UserMenu";
 
 const Header = () => {
-  const userName = 'John Doe';
+  const userName = "John Doe";
 
   return (
     <header className="sticky top-0 bg-white border-b border-slate-200 z-30">
@@ -18,13 +18,11 @@ const Header = () => {
             {/*  Divider */}
             <hr className="w-px h-6 bg-slate-200 mx-3" />
             <UserMenu userName={userName} />
-
           </div>
-
         </div>
       </div>
     </header>
   );
-}
+};
 
 export default Header;

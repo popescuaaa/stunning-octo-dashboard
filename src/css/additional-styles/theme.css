@@ -4,5 +4,5 @@
 .form-select:focus,
 .form-checkbox:focus,
 .form-radio:focus {
-    @apply ring-0;
+  @apply ring-0;
 }

@@ -1,28 +1,36 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect } from "react";
 
 import {
-  Chart, BarController, BarElement, LinearScale, TimeScale, Tooltip, Legend,
-} from 'chart.js';
-import 'chartjs-adapter-moment';
+  Chart,
+  BarController,
+  BarElement,
+  LinearScale,
+  TimeScale,
+  Tooltip,
+  Legend,
+} from "chart.js";
+import "chartjs-adapter-moment";
 
 // Import utilities
-import { formatValue } from '../utils/Utils';
+import { formatValue } from "../utils/Utils";
 
-Chart.register(BarController, BarElement, LinearScale, TimeScale, Tooltip, Legend);
+Chart.register(
+  BarController,
+  BarElement,
+  LinearScale,
+  TimeScale,
+  Tooltip,
+  Legend
+);
 
-function BarChart02({
-  data,
-  width,
-  height
-}) {
-
+function BarChart02({ data, width, height }) {
   const canvas = useRef(null);
 
   useEffect(() => {
     const ctx = canvas.current;
     // eslint-disable-next-line no-unused-vars
     const chart = new Chart(ctx, {
-      type: 'bar',
+      type: "bar",
       data: data,
       options: {
         layout: {
@@ -47,12 +55,12 @@ function BarChart02({
           },
           x: {
             stacked: true,
-            type: 'time',
+            type: "time",
             time: {
-              parser: 'MM-DD-YYYY',
-              unit: 'month',
+              parser: "MM-DD-YYYY",
+              unit: "month",
               displayFormats: {
-                month: 'MMM YY',
+                month: "MMM YY",
               },
             },
             grid: {
@@ -78,7 +86,7 @@ function BarChart02({
         },
         interaction: {
           intersect: false,
-          mode: 'nearest',
+          mode: "nearest",
         },
         animation: {
           duration: 200,
@@ -91,9 +99,7 @@ function BarChart02({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  return (
-    <canvas ref={canvas} width={width} height={height}></canvas>
-  );
+  return <canvas ref={canvas} width={width} height={height}></canvas>;
 }
 
 export default BarChart02;
