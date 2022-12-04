@@ -4,6 +4,8 @@ import Help from './header/Help';
 import UserMenu from './header/UserMenu';
 
 const Header = () => {
+  const userName = 'John Doe';
+
   return (
     <header className="sticky top-0 bg-white border-b border-slate-200 z-30">
       <div className="px-4 sm:px-6 lg:px-8">
@@ -15,7 +17,7 @@ const Header = () => {
             <Help />
             {/*  Divider */}
             <hr className="w-px h-6 bg-slate-200 mx-3" />
-            <UserMenu />
+            <UserMenu userName={userName} />
 
           </div>
 
