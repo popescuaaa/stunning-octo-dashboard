@@ -3,8 +3,8 @@ import React, { useState } from 'react';
 import Sidebar from '../partials/Sidebar';
 import Header from '../partials/Header';
 import WelcomeBanner from '../partials/dashboard/WelcomeBanner';
-import DashboardCard01 from '../partials/dashboard/DashboardCard01';
-import DashboardCard02 from '../partials/dashboard/DashboardCard02';
+import MonthlySales from '../partials/dashboard/MonthlySales';
+import YearlySales from '../partials/dashboard/YearlySales';
 import DashboardCard03 from '../partials/dashboard/DashboardCard03';
 import DashboardCard04 from '../partials/dashboard/DashboardCard04';
 import DashboardCard05 from '../partials/dashboard/DashboardCard05';
@@ -40,10 +40,10 @@ const Dashboard = () => {
             {/* Cards */}
             <div className="grid grid-cols-12 gap-6">
 
-              {/* Line chart (Acme Plus) */}
-              <DashboardCard01 />
-              {/* Line chart (Acme Advanced) */}
-              <DashboardCard02 />
+              {/* Monlthy sales */}
+              <MonthlySales />
+              {/* Yearly sales */}
+              <YearlySales />
               {/* Line chart (Acme Professional) */}
               <DashboardCard03 />
               {/* Bar chart (Direct vs Indirect) */}

@@ -7,7 +7,7 @@ import EditMenu from '../EditMenu';
 // Import utilities
 import { tailwindConfig, hexToRGB } from '../../utils/Utils';
 
-function DashboardCard02() {
+const YearlySales = () => {
 
   const chartData = {
     labels: [
@@ -32,12 +32,12 @@ function DashboardCard02() {
         ],
         fill: true,
         backgroundColor: `rgba(${hexToRGB(tailwindConfig().theme.colors.blue[500])}, 0.08)`,
-        borderColor: tailwindConfig().theme.colors.indigo[500],
+        borderColor: tailwindConfig().theme.colors.green[500],
         borderWidth: 2,
         tension: 0,
         pointRadius: 0,
         pointHoverRadius: 3,
-        pointBackgroundColor: tailwindConfig().theme.colors.indigo[500],
+        pointBackgroundColor: tailwindConfig().theme.colors.green[500],
         clip: 20,
       },
       // Gray line
@@ -65,23 +65,11 @@ function DashboardCard02() {
         <header className="flex justify-between items-start mb-2">
           {/* Icon */}
           <img src={Icon} width="32" height="32" alt="Icon 02" />
-          {/* Menu button */}
-          <EditMenu className="relative inline-flex">
-            <li>
-              <Link className="font-medium text-sm text-slate-600 hover:text-slate-800 flex py-1 px-3" to="#0">Option 1</Link>
-            </li>
-            <li>
-              <Link className="font-medium text-sm text-slate-600 hover:text-slate-800 flex py-1 px-3" to="#0">Option 2</Link>
-            </li>
-            <li>
-              <Link className="font-medium text-sm text-rose-500 hover:text-rose-600 flex py-1 px-3" to="#0">Remove</Link>
-            </li>
-          </EditMenu>
         </header>
-        <h2 className="text-lg font-semibold text-slate-800 mb-2">Acme Advanced</h2>
+        <h2 className="text-lg font-semibold text-slate-800 mb-2">Yearly Sales</h2>
         <div className="text-xs font-semibold text-slate-400 uppercase mb-1">Sales</div>
         <div className="flex items-start">
-          <div className="text-3xl font-bold text-slate-800 mr-2">$17,489</div>
+          <div className="text-3xl font-bold text-slate-800 mr-2">$117,489</div>
           <div className="text-sm font-semibold text-white px-1.5 bg-yellow-500 rounded-full">-14%</div>
         </div>
       </div>
@@ -94,4 +82,4 @@ function DashboardCard02() {
   );
 }
 
-export default DashboardCard02;
+export default YearlySales;
