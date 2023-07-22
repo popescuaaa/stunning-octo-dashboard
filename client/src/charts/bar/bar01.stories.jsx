@@ -1,25 +1,25 @@
 /**
  * Storybook example for Bar01 chart
- * 
+ *
  */
 
 import React from 'react';
-import BarChart01  from './bar01';
+import BarChart01 from './bar01';
 import { tailwindConfig } from '../../utils/Utils';
 
 export default {
-    title: 'Charts/Bar/Bar01',
-    component: BarChart01,
+	title: 'Charts/Bar/Bar01',
+	component: BarChart01,
 };
 
 const Template = (args) => <BarChart01 {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-    width: 595,
-    height: 248,
-    data: {
-        labels: [
+	width: 595,
+	height: 248,
+	data: {
+		labels: [
 			'12-01-2020',
 			'01-01-2021',
 			'02-01-2021',
@@ -47,5 +47,5 @@ Default.args = {
 				categoryPercentage: 0.66,
 			},
 		],
-    }
+	},
 };
