@@ -9,6 +9,7 @@
 > client
 - [x] install component visualisation tool: i.e storybook
 - [ ] add proptypes
+- [ ] add tests
 
 > server
 
