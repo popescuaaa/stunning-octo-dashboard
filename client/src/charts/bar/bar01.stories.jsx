@@ -1,12 +1,25 @@
-import React from 'react';
-import BarChart from '../../charts/bar/bar01';
+/**
+ * Storybook example for Bar01 chart
+ * 
+ */
 
-// Import utilities
+import React from 'react';
+import BarChart01  from './bar01';
 import { tailwindConfig } from '../../utils/Utils';
 
-function DashboardCard04() {
-	const chartData = {
-		labels: [
+export default {
+    title: 'Charts/Bar/Bar01',
+    component: BarChart01,
+};
+
+const Template = (args) => <BarChart01 {...args} />;
+
+export const Default = Template.bind({});
+Default.args = {
+    width: 595,
+    height: 248,
+    data: {
+        labels: [
 			'12-01-2020',
 			'01-01-2021',
 			'02-01-2021',
@@ -34,18 +47,5 @@ function DashboardCard04() {
 				categoryPercentage: 0.66,
 			},
 		],
-	};
-
-	return (
-		<div className="flex flex-col col-span-full sm:col-span-6 bg-white shadow-lg rounded-sm border border-slate-200">
-			<header className="px-5 py-4 border-b border-slate-100">
-				<h2 className="font-semibold text-slate-800">Direct VS Indirect</h2>
-			</header>
-			{/* Chart built with Chart.js 3 */}
-			{/* Change the height attribute to adjust the chart height */}
-			<BarChart data={chartData} width={595} height={248} />
-		</div>
-	);
-}
-
-export default DashboardCard04;
+    }
+};
