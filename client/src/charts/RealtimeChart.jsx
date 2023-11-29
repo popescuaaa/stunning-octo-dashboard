@@ -25,7 +25,7 @@ Chart.register(
 	Tooltip
 );
 
-function RealtimeChart({ data, width, height }) {
+const RealtimeChart = ({ data, width, height }) => {
 	const canvas = useRef(null);
 	const chartValue = useRef(null);
 	const chartDeviation = useRef(null);

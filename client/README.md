@@ -1,1 +1,1 @@
-# React dashboard template
+# React | Graph.js | Dashboard
