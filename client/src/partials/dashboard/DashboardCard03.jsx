@@ -1,5 +1,5 @@
 import React from 'react';
-import LineChart from '../../charts/LineChart01';
+import LineChart from '../../charts/line/LineChart01';
 import Icon from '../../images/icon-03.svg';
 
 // Import utilities

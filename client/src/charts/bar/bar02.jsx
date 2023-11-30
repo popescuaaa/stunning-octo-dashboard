@@ -23,7 +23,7 @@ Chart.register(
 	Legend
 );
 
-function BarChart02({ data, width, height }) {
+const BarChart02 = ({ data, width, height }) => {
 	const canvas = useRef(null);
 
 	useEffect(() => {

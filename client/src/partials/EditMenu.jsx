@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Transition from '../utils/Transition';
 
-function EditMenu({ children, ...rest }) {
+const EditMenu = ({ children, ...rest }) => {
 	const [dropdownOpen, setDropdownOpen] = useState(false);
 
 	const trigger = useRef(null);

@@ -13,7 +13,7 @@ import {
 import 'chartjs-adapter-moment';
 
 // Import utilities
-import { tailwindConfig, formatValue } from '../utils/Utils';
+import { tailwindConfig, formatValue } from '../../utils/Utils';
 
 Chart.register(
 	LineController,

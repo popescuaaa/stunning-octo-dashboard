@@ -30,6 +30,4 @@ Client
 > push
 
 
------
-Server
----
+
