@@ -71,6 +71,6 @@ const EditMenu = ({ children, ...rest }) => {
 			</Transition>
 		</div>
 	);
-}
+};
 
 export default EditMenu;

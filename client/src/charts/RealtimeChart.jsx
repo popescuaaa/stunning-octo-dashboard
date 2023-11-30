@@ -137,6 +137,6 @@ const RealtimeChart = ({ data, width, height }) => {
 			</div>
 		</React.Fragment>
 	);
-}
+};
 
 export default RealtimeChart;

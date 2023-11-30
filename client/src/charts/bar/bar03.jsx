@@ -151,6 +151,6 @@ const BarChart03 = ({ data, width, height }) => {
 			</div>
 		</div>
 	);
-}
+};
 
 export default BarChart03;

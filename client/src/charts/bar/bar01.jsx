@@ -175,6 +175,6 @@ const BarChart01 = ({ data, width, height }) => {
 			</div>
 		</React.Fragment>
 	);
-}
+};
 
 export default BarChart01;

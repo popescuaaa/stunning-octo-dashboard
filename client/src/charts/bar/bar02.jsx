@@ -100,6 +100,6 @@ const BarChart02 = ({ data, width, height }) => {
 	}, []);
 
 	return <canvas ref={canvas} width={width} height={height}></canvas>;
-}
+};
 
 export default BarChart02;
